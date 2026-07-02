@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>操作结果</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="page page-result">
+    <section id="resultContent" class="result-content" hidden>
+      <header class="result-header">
+        <h1>操作结果</h1>
+      </header>
+
+      <div class="success-block" aria-label="申请提交成功">
+        <div class="success-icon" aria-hidden="true"></div>
+        <p>申请提交成功</p>
+      </div>
+
+      <dl class="detail-list">
+        <div class="detail-row">
+          <dt>授信金额</dt>
+          <dd id="creditAmountText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>企业名称</dt>
+          <dd id="companyNameText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>统一社会信用代码</dt>
+          <dd id="unifiedSocialCreditCodeText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>贷款年化利率</dt>
+          <dd id="annualInterestRateText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>贷款申请日期</dt>
+          <dd id="applyDateText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>还款方式</dt>
+          <dd id="repaymentMethodText"></dd>
+        </div>
+        <div class="detail-row">
+          <dt>还款周期</dt>
+          <dd id="repaymentPeriodText"></dd>
+        </div>
+      </dl>
+
+      <button class="primary-button complete-button" type="button">完成</button>
+    </section>
+
+    <section id="emptyState" class="empty-state" hidden>
+      <h1>操作结果</h1>
+      <p>未获取到申请信息，请返回重新填写</p>
+      <button class="primary-button" id="backButton" type="button">返回填写页面</button>
+    </section>
+  </main>
+
+  <script src="./js/result.js"></script>
+</body>
+</html>

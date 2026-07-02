@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贷款申请信息</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="page page-form">
+    <header class="page-header">
+      <h1>贷款申请信息</h1>
+    </header>
+
+    <form class="apply-form" id="applyForm" novalidate>
+      <div class="field" data-field="creditAmount">
+        <label for="creditAmount">授信金额</label>
+        <div class="input-with-unit">
+          <input id="creditAmount" name="creditAmount" type="text" inputmode="decimal" autocomplete="off" placeholder="请输入授信金额">
+          <span>万元</span>
+        </div>
+        <p class="error-message" id="creditAmountError"></p>
+      </div>
+
+      <div class="field" data-field="companyName">
+        <label for="companyName">企业名称</label>
+        <input id="companyName" name="companyName" type="text" maxlength="50" autocomplete="organization" placeholder="请输入企业名称">
+        <p class="error-message" id="companyNameError"></p>
+      </div>
+
+      <div class="field" data-field="unifiedSocialCreditCode">
+        <label for="unifiedSocialCreditCode">统一社会信用代码</label>
+        <input id="unifiedSocialCreditCode" name="unifiedSocialCreditCode" type="text" autocomplete="off" placeholder="请输入统一社会信用代码">
+        <p class="error-message" id="unifiedSocialCreditCodeError"></p>
+      </div>
+
+      <div class="field" data-field="annualInterestRate">
+        <label for="annualInterestRate">贷款年化利率</label>
+        <div class="input-with-unit">
+          <input id="annualInterestRate" name="annualInterestRate" type="text" inputmode="decimal" autocomplete="off" placeholder="请输入年化利率">
+          <span>%</span>
+        </div>
+        <p class="error-message" id="annualInterestRateError"></p>
+      </div>
+
+      <div class="field" data-field="applyDate">
+        <label for="applyDate">贷款申请日期</label>
+        <input id="applyDate" name="applyDate" type="date">
+        <p class="error-message" id="applyDateError"></p>
+      </div>
+
+      <div class="field" data-field="repaymentMethod">
+        <label for="repaymentMethod">还款方式</label>
+        <select id="repaymentMethod" name="repaymentMethod">
+          <option value="一次性还本按约还息">一次性还本按约还息</option>
+          <option value="等额本息">等额本息</option>
+          <option value="等额本金">等额本金</option>
+          <option value="按月付息到期还本">按月付息到期还本</option>
+        </select>
+        <p class="error-message" id="repaymentMethodError"></p>
+      </div>
+
+      <div class="field" data-field="repaymentPeriod">
+        <label for="repaymentPeriod">还款周期</label>
+        <select id="repaymentPeriod" name="repaymentPeriod">
+          <option value="按月">按月</option>
+          <option value="按季">按季</option>
+          <option value="按年" selected>按年</option>
+        </select>
+        <p class="error-message" id="repaymentPeriodError"></p>
+      </div>
+
+      <button class="primary-button" type="submit">生成结果页面</button>
+    </form>
+  </main>
+
+  <script src="./js/apply.js"></script>
+</body>
+</html>
