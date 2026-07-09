@@ -173,8 +173,8 @@ button {
   position: relative;
   overflow: hidden;
   background: #ffffff;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 .result-content {
@@ -188,7 +188,7 @@ button {
 }
 
 .success-block {
-  padding: 84px 0 74px;
+  padding: 52px 0 74px;
   text-align: center;
 }
 
@@ -292,7 +292,7 @@ button {
   }
 
   .success-block {
-    padding-top: 70px;
+    padding-top: 44px;
     padding-bottom: 58px;
   }
 
