@@ -193,25 +193,22 @@ button {
 }
 
 .success-icon {
-  position: relative;
+  display: block;
   width: 128px;
   height: 128px;
   margin: 0 auto;
-  border-radius: 50%;
-  background: #18bfa8;
 }
 
-.success-icon::after {
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  width: 58px;
-  height: 32px;
-  border: solid #ffffff;
-  border-width: 0 0 10px 10px;
-  border-radius: 4px;
-  content: "";
-  transform: rotate(-45deg);
+.success-icon circle {
+  fill: #18bfa8;
+}
+
+.success-icon path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .success-block p {
@@ -302,14 +299,6 @@ button {
   .success-icon {
     width: 116px;
     height: 116px;
-  }
-
-  .success-icon::after {
-    top: 32px;
-    left: 32px;
-    width: 52px;
-    height: 29px;
-    border-width: 0 0 9px 9px;
   }
 
   .success-block p {
