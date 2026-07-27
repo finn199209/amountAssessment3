@@ -1,5 +1,13 @@
 (function () {
   const storageKey = 'loanApplyData';
+  const authKey = 'loanDemoAuthed';
+  const authValue = 'preset-password-passed';
+
+  if (sessionStorage.getItem(authKey) !== authValue) {
+    window.location.href = './password.html';
+    return;
+  }
+
   const resultContent = document.getElementById('resultContent');
   const emptyState = document.getElementById('emptyState');
   const backButton = document.getElementById('backButton');
