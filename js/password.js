@@ -1,5 +1,5 @@
 (function () {
-  const presetPassword = 'hyh2026';
+  const presetPassword = '4802hyh';
   const authKey = 'loanDemoAuthed';
   const authValue = 'preset-password-passed';
 
