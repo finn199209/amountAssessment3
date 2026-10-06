@@ -195,6 +195,50 @@ button {
   z-index: 1;
 }
 
+.result-watermarks {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.result-watermark {
+  position: absolute;
+  left: 50%;
+  width: min(390px, calc(100vw - 24px));
+  color: rgba(31, 35, 41, 0.11);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.65;
+  text-align: center;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.result-watermark span {
+  display: block;
+  white-space: nowrap;
+}
+
+.result-watermark-top {
+  top: 33%;
+}
+
+.result-watermark-middle {
+  top: 59%;
+}
+
+.result-watermark-bottom {
+  top: 85%;
+}
+
+.result-header,
+.success-block,
+.detail-list,
+.complete-button {
+  position: relative;
+  z-index: 1;
+}
+
 .result-header {
   padding: 22px 0 0;
   text-align: center;
@@ -225,7 +269,7 @@ button {
 }
 
 .success-block p {
-  margin: 42px 0 0;
+  margin: 56px 0 0;
   color: #16191f;
   font-size: 30px;
   font-weight: 500;
